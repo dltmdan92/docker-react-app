@@ -16,10 +16,11 @@ after_success:
   - echo "Test Success"
 
 deploy:
+  edge: true
   provider: elasticbeanstalk
   region: ap-northeast-2
   app: docker-react-app
-  env: DockerReactApp-env
+  env: Dockerreactapp-env
   bucket_name: elasticbeanstalk-ap-northeast-2-003232926877
   bucket_path: docker-react-app
   on:
